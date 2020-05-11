@@ -6,7 +6,7 @@ public class CompareFolders {
         Path file2 = Paths.get("/root/sandbox/TestData2.txt");
         Path file3 = Paths.get("/root/sandbox/test/TestData3.txt");
         try {
-            if (file1.getName(1).equals(file3.getName(2))) {
+            if ( file1.getName(1).equals(file2.getName(1)) && file2.getName(1).equals(file3.getName(2)) ) {
                 System.out.println("All files are in the same folder");
             } else {
                 System.out.println("Files are not in the same folder.");
