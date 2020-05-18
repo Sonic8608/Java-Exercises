@@ -15,13 +15,14 @@ public class JBookQuote extends JFrame {
         add(msg3);
         button.addActionListener(this::actionPerformed);
         setLayout(flow);
-
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 
     public void actionPerformed(ActionEvent e)
     {
         msg3.setText("**    A Christmas Carol    **");
+        
     }
 
     public static void main(String[] args) {
